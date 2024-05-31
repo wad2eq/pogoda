@@ -4,16 +4,16 @@
 	import type { Main, DayInterval, TwentyFourHourSymbol } from '$lib/data/cityforcast.d.js';
 
 	const dayIntervals: Array<DayInterval> = cityForcast.dayIntervals;
-  //TODO: ustawić zmienne globalne - może na tłumacznie
+	//TODO: ustawić zmienne globalne - może na tłumacznie
 	const national = 'no-NO';
 
-	const getFormattedDate = (dateTime) => {
-    console.log(dateTime);
+	const getFormattedDate = (dateTime: Date) => {
+		console.log(dateTime);
 		const date = new Date(dateTime);
 		// // const options = {dateStyle: 'full'};
-    const options = { weekday: 'long', month: 'long', day: 'numeric' };
+		const options = { weekday: 'long', month: 'long', day: 'numeric' };
 		const formattedDate = date.toLocaleDateString(national, options);
-    return formattedDate;
+		return formattedDate;
 	};
 </script>
 
@@ -35,13 +35,13 @@
 		{#each dayIntervals as dayInterval, i}
 			<Table.Row>
 				<Table.Cell><strong>{getFormattedDate(dayInterval.start)}</strong></Table.Cell>
-        {#each dayInterval.sixHourSymbols as symbol, i}
-          <Table.Cell>
-            {#if symbol}
-              <img src={`/weathericons/${symbol}.svg`} alt="" class="w-9" />
-            {/if}
-          </Table.Cell>
-        {/each}
+				{#each dayInterval.sixHourSymbols as symbol, i}
+					<Table.Cell>
+						{#if symbol}
+							<img src={`/weathericons/${symbol}.svg`} alt="" class="w-9" />
+						{/if}
+					</Table.Cell>
+				{/each}
 				<Table.Cell>{dayInterval.temperature.min}/{dayInterval.temperature.max}</Table.Cell>
 				<Table.Cell>{dayInterval.precipitation.value}/mm</Table.Cell>
 				<Table.Cell>{dayInterval.wind.max}</Table.Cell>
@@ -50,12 +50,3 @@
 		{/each}
 	</Table.Body>
 </Table.Root>
-
-<!-- {#each dayIntervale as day, i}
-	<div class="flex items-stretch gap-2">
-		{#each day.sixHourSymbols as symbol, i}
-			<div>{symbol}</div>
-		{/each}
-	</div>
-	<hr />
-{/each} -->
