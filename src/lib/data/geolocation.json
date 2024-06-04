@@ -1,0 +1,590 @@
+[
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Oslo",
+						"short_name": "Oslo",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Oslo",
+						"short_name": "Oslo",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Oslo, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 59.978035,
+							"lng": 10.9476641
+						},
+						"southwest": {
+							"lat": 59.8096749,
+							"lng": 10.6225689
+						}
+					},
+					"location": {
+						"lat": 59.9138688,
+						"lng": 10.7522454
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 59.978035,
+							"lng": 10.9476641
+						},
+						"southwest": {
+							"lat": 59.8096749,
+							"lng": 10.6225689
+						}
+					}
+				},
+				"place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+				"types": ["locality", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Tromsø",
+						"short_name": "Tromsø",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Troms",
+						"short_name": "Troms",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Tromsø, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 69.71495709999999,
+							"lng": 19.0877596
+						},
+						"southwest": {
+							"lat": 69.61553959999999,
+							"lng": 18.8911066
+						}
+					},
+					"location": {
+						"lat": 69.6492047,
+						"lng": 18.9553238
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 69.71495709999999,
+							"lng": 19.0877596
+						},
+						"southwest": {
+							"lat": 69.61553959999999,
+							"lng": 18.8911066
+						}
+					}
+				},
+				"place_id": "ChIJ_XE7bFLExEUR075ujoXKPQI",
+				"types": ["locality", "political"]
+			},
+			{
+				"address_components": [
+					{
+						"long_name": "Tromsø Municipality",
+						"short_name": "Tromsø Municipality",
+						"types": ["administrative_area_level_2", "political"]
+					},
+					{
+						"long_name": "Troms",
+						"short_name": "Troms",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Tromsø Municipality, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 70.16841660000001,
+							"lng": 20.0436388
+						},
+						"southwest": {
+							"lat": 69.28208889999999,
+							"lng": 17.1600465
+						}
+					},
+					"location": {
+						"lat": 69.6497717,
+						"lng": 18.984122
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 70.16841660000001,
+							"lng": 20.0436388
+						},
+						"southwest": {
+							"lat": 69.28208889999999,
+							"lng": 17.1600465
+						}
+					}
+				},
+				"place_id": "ChIJvQ0IsGS7cUYRR-jE7WOFpcs",
+				"types": ["administrative_area_level_2", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Stavanger",
+						"short_name": "Stavanger",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Rogaland",
+						"short_name": "Rogaland",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Stavanger, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 59.0124878,
+							"lng": 5.770240900000001
+						},
+						"southwest": {
+							"lat": 58.8848189,
+							"lng": 5.5904327
+						}
+					},
+					"location": {
+						"lat": 58.9699756,
+						"lng": 5.7331073
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 59.0124878,
+							"lng": 5.770240900000001
+						},
+						"southwest": {
+							"lat": 58.8848189,
+							"lng": 5.5904327
+						}
+					}
+				},
+				"place_id": "ChIJlfcp3Uk1OkYRWZIKuCHreq0",
+				"types": ["locality", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Lillestrøm",
+						"short_name": "Lillestrøm",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Akershus",
+						"short_name": "Akershus",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Lillestrøm, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 59.9685302,
+							"lng": 11.0772589
+						},
+						"southwest": {
+							"lat": 59.94182989999999,
+							"lng": 11.0242488
+						}
+					},
+					"location": {
+						"lat": 59.9559696,
+						"lng": 11.0503785
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 59.9685302,
+							"lng": 11.0772589
+						},
+						"southwest": {
+							"lat": 59.94182989999999,
+							"lng": 11.0242488
+						}
+					}
+				},
+				"place_id": "ChIJd_e7gl97QUYRzWNABG-6IWA",
+				"types": ["locality", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Kristiansand",
+						"short_name": "Kristiansand",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Agder",
+						"short_name": "Agder",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Kristiansand, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 58.2066083,
+							"lng": 8.151040799999999
+						},
+						"southwest": {
+							"lat": 58.0993469,
+							"lng": 7.911937299999999
+						}
+					},
+					"location": {
+						"lat": 58.15991189999999,
+						"lng": 8.0182064
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 58.2066083,
+							"lng": 8.151040799999999
+						},
+						"southwest": {
+							"lat": 58.0993469,
+							"lng": 7.911937299999999
+						}
+					}
+				},
+				"place_id": "ChIJW3pg1VgCOEYRpFgcyG8NDN8",
+				"types": ["locality", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Drammen",
+						"short_name": "Drammen",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Buskerud",
+						"short_name": "Buskerud",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Drammen, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 59.76454440000001,
+							"lng": 10.2709669
+						},
+						"southwest": {
+							"lat": 59.70349900000001,
+							"lng": 10.0971382
+						}
+					},
+					"location": {
+						"lat": 59.7440738,
+						"lng": 10.2044564
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 59.76454440000001,
+							"lng": 10.2709669
+						},
+						"southwest": {
+							"lat": 59.70349900000001,
+							"lng": 10.0971382
+						}
+					}
+				},
+				"place_id": "ChIJGYRyqrQ8QUYR2TajSWaReMU",
+				"types": ["locality", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Bergen",
+						"short_name": "Bergen",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Vestland",
+						"short_name": "Vestland",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Bergen, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 60.52683889999999,
+							"lng": 5.687777
+						},
+						"southwest": {
+							"lat": 60.2035321,
+							"lng": 5.1705641
+						}
+					},
+					"location": {
+						"lat": 60.39126279999999,
+						"lng": 5.3220544
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 60.52683889999999,
+							"lng": 5.687777
+						},
+						"southwest": {
+							"lat": 60.2035321,
+							"lng": 5.1705641
+						}
+					}
+				},
+				"place_id": "ChIJd312ZkkNOUYRCAretD6gQp4",
+				"types": ["locality", "political"]
+			},
+			{
+				"address_components": [
+					{
+						"long_name": "Bergen County",
+						"short_name": "Bergen County",
+						"types": ["administrative_area_level_2", "political"]
+					},
+					{
+						"long_name": "New Jersey",
+						"short_name": "NJ",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "United States",
+						"short_name": "US",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Bergen County, NJ, USA",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 41.1332421,
+							"lng": -73.8939789
+						},
+						"southwest": {
+							"lat": 40.76159,
+							"lng": -74.272226
+						}
+					},
+					"location": {
+						"lat": 40.9262762,
+						"lng": -74.07701
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 41.1332421,
+							"lng": -73.8939789
+						},
+						"southwest": {
+							"lat": 40.76159,
+							"lng": -74.272226
+						}
+					}
+				},
+				"place_id": "ChIJi82Epg0Aw4kRBYbf88CH42w",
+				"types": ["administrative_area_level_2", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Bærum",
+						"short_name": "Bærum",
+						"types": ["administrative_area_level_2", "political"]
+					},
+					{
+						"long_name": "Akershus",
+						"short_name": "Akershus",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Bærum, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 60.03222710000001,
+							"lng": 10.6580825
+						},
+						"southwest": {
+							"lat": 59.8257398,
+							"lng": 10.348024
+						}
+					},
+					"location": {
+						"lat": 59.95742329999999,
+						"lng": 10.4786126
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 60.03222710000001,
+							"lng": 10.6580825
+						},
+						"southwest": {
+							"lat": 59.8257398,
+							"lng": 10.348024
+						}
+					}
+				},
+				"place_id": "ChIJCwoHxOa6RkYRPVrYyP2ga6g",
+				"types": ["administrative_area_level_2", "political"]
+			}
+		],
+		"status": "OK"
+	},
+	{
+		"results": [],
+		"status": "ZERO_RESULTS"
+	},
+	{
+		"results": [
+			{
+				"address_components": [
+					{
+						"long_name": "Trondheim",
+						"short_name": "Trondheim",
+						"types": ["locality", "political"]
+					},
+					{
+						"long_name": "Trøndelag",
+						"short_name": "Trøndelag",
+						"types": ["administrative_area_level_1", "political"]
+					},
+					{
+						"long_name": "Norway",
+						"short_name": "NO",
+						"types": ["country", "political"]
+					}
+				],
+				"formatted_address": "Trondheim, Norway",
+				"geometry": {
+					"bounds": {
+						"northeast": {
+							"lat": 63.45691890000001,
+							"lng": 10.4975061
+						},
+						"southwest": {
+							"lat": 63.4110525,
+							"lng": 10.2981588
+						}
+					},
+					"location": {
+						"lat": 63.4305149,
+						"lng": 10.3950528
+					},
+					"location_type": "APPROXIMATE",
+					"viewport": {
+						"northeast": {
+							"lat": 63.45691890000001,
+							"lng": 10.5344062
+						},
+						"southwest": {
+							"lat": 63.4110525,
+							"lng": 10.2981588
+						}
+					}
+				},
+				"place_id": "ChIJU34DR5cxbUYR1PM8jyjI9ws",
+				"types": ["locality", "political"]
+			}
+		],
+		"status": "OK"
+	}
+]
