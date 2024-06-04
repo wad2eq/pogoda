@@ -20,7 +20,6 @@ export function getFormattedDate(time: string) {
 	}).format(date);
 
 	if (isToday(date)) {
-		console.log(formattedDate);
 		return formattedDate.replace(`${date.toLocaleString('default', { weekday: 'long' })}`, 'A day');
 	}
 	return formattedDate;

@@ -41,6 +41,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"date-fns": "^3.6.0"
+		"clsx": "^2.1.1",
+		"date-fns": "^3.6.0",
+		"tailwind-merge": "^2.3.0",
+		"tailwind-variants": "^0.2.1"
 	}
 }
