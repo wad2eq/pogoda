@@ -49,7 +49,9 @@
 	<Table.Body>
 		{#each forcasts as forcast, i (i)}
 			<Table.Row>
-				<Table.Cell class="font-medium"><a href="/forecast/city/">{forcast.city}</a></Table.Cell>
+				<Table.Cell class="font-medium"
+					><a href={`/forecast/${forcast.city}/`} class="city-link">{forcast.city}</a></Table.Cell
+				>
 				{#each forcast.temp as temp, j}
 					<Table.Cell
 						><div class="flex items-center">
@@ -61,3 +63,16 @@
 		{/each}
 	</Table.Body>
 </Table.Root>
+
+<style>
+	.city-link::after {
+		content: '';
+		display: block;
+		position: absolute;
+		/* background-color: antiquewhite; */
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+</style>

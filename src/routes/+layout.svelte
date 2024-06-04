@@ -5,7 +5,7 @@
 </script>
 
 <div class="container relative flex min-h-screen flex-col bg-background" id="page">
-	<div class="logo"><img {src} alt="" /></div>
+	<div class="logo"><a href="/"><img {src} alt="" /></a></div>
 	<div class="overflow-hidden rounded-[0.5rem] border bg-background shadow-xl">
 		<Header />
 		<div class="p-3"><slot /></div>
