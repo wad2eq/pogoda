@@ -7,10 +7,18 @@
 	import { onMount } from 'svelte';
 	let src = './logo-small.jpg';
 	let data = '';
+	//default geolocation
 	let name = { lat: 59.355091, lng: 5.323378 };
 	function loadLocation() {
 		console.log(name);
 	}
+
+	function getPlace() {
+		return {};
+	}
+
+	//Get current user position
+	//TODO: przenieś metodę do UTILS ? A jak async zadziała
 	onMount(() => {
 		navigator.geolocation.getCurrentPosition((location) => {
 			name = {
@@ -33,32 +41,9 @@
 	</div>
 	<div class="grow"></div>
 	<div class="flex gap-3">
-		<Input bind:value={data} placeholder="Give the region" on:focus={() => (data = '')} />
-		<Drawer.Root>
-			<Drawer.Trigger><Button variant="outline">Szukaj</Button></Drawer.Trigger>
-			<Drawer.Content>
-				<Drawer.Header>
-					<Drawer.Title>Navigation</Drawer.Title>
-					<Drawer.Description>This action cannot be undone.</Drawer.Description>
-				</Drawer.Header>
-				<Drawer.Footer>
-					<Button>Submit</Button>
-					<Drawer.Close>Cancel</Drawer.Close>
-				</Drawer.Footer>
-			</Drawer.Content>
-		</Drawer.Root>
-		<Menubar.Root>
-			<Menubar.Menu>
-				<Menubar.Trigger>Menu</Menubar.Trigger>
-				<Menubar.Content>
-					<Menubar.Item>Map</Menubar.Item>
-					<Menubar.Item>New Window</Menubar.Item>
-					<Menubar.Separator />
-					<Menubar.Item>Share</Menubar.Item>
-					<Menubar.Separator />
-					<Menubar.Item>Print</Menubar.Item>
-				</Menubar.Content>
-			</Menubar.Menu>
-		</Menubar.Root>
+		<form action="/search">
+			<Input bind:value={data} placeholder="Give the region" on:focus={() => (data = '')} />
+			<Button variant="outline">Szukaj</Button>
+		</form>
 	</div>
 </div>
