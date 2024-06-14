@@ -18,6 +18,8 @@
 
 	export let forecastData: LongInterval;
 	export let time: Date;
+
+	//Pobież dane aktualne dla lokalizacji
 	let curretDayForeCast: Array<LongInterval> = [];
 	onMount(() => getTempTime());
 	const getTempTime = () => {

@@ -1,6 +1,8 @@
 <script>
 	import * as Table from '$lib/components/ui/table';
 	import { daysOfTheWeek } from '$lib/data/days';
+
+	//Forcast dla przykładowych miast
 	const forcasts = [
 		{
 			id: 'INV001',

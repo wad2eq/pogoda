@@ -36,10 +36,10 @@
 	</div>
 	<div class="grow"></div>
 	<div class="flex gap-3">
-		<form action="/locations?location=sad">
+		<form action="/locations?location=sad" method="get">
 			<div class="flex items-center gap-2">
-				<span>{searchLocation}</span>
-				<Input bind:value={searchLocation} placeholder="Give the region" />
+				<label for="location">{searchLocation}</label>
+				<Input bind:value={searchLocation} placeholder="Give the region" name="location" />
 				<Button type="submit">Search</Button>
 			</div>
 		</form>
