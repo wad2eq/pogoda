@@ -6,13 +6,9 @@
 	import * as Menubar from '$lib/components/ui/menubar';
 	import { onMount } from 'svelte';
 	let src = './logo-small.jpg';
-	let data = '';
+	let searchLocation = '';
 	//default geolocation
 	let name = { lat: 59.355091, lng: 5.323378 };
-	function loadLocation() {
-		console.log(name);
-	}
-
 	function getPlace() {
 		return {};
 	}
@@ -25,7 +21,6 @@
 				lat: location.coords.latitude,
 				lng: location.coords.longitude
 			};
-			loadLocation();
 		});
 	});
 </script>
@@ -41,9 +36,12 @@
 	</div>
 	<div class="grow"></div>
 	<div class="flex gap-3">
-		<form action="/search">
-			<Input bind:value={data} placeholder="Give the region" on:focus={() => (data = '')} />
-			<Button variant="outline">Szukaj</Button>
+		<form action="/locations?location=sad">
+			<div class="flex items-center gap-2">
+				<span>{searchLocation}</span>
+				<Input bind:value={searchLocation} placeholder="Give the region" />
+				<Button type="submit">Search</Button>
+			</div>
 		</form>
 	</div>
 </div>
