@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import { Input } from '$lib/components/ui/input';
 	import { Button } from '$lib/components/ui/button';
@@ -36,7 +36,7 @@
 	</div>
 	<div class="grow"></div>
 	<div class="flex gap-3">
-		<form action="/locations?location=sad" method="get">
+		<form action={`/locations/`} method="POST">
 			<div class="flex items-center gap-2">
 				<label for="location">{searchLocation}</label>
 				<Input bind:value={searchLocation} placeholder="Give the region" name="location" />
