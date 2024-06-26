@@ -1,0 +1,170 @@
+{
+	"predictions": [
+		{
+			"description": "Gdańsk, Poland",
+			"matched_substrings": [
+				{
+					"length": 6,
+					"offset": 0
+				}
+			],
+			"place_id": "ChIJb_rUFBxz_UYRjb63Y_H7uZs",
+			"reference": "ChIJb_rUFBxz_UYRjb63Y_H7uZs",
+			"structured_formatting": {
+				"main_text": "Gdańsk",
+				"main_text_matched_substrings": [
+					{
+						"length": 6,
+						"offset": 0
+					}
+				],
+				"secondary_text": "Poland"
+			},
+			"terms": [
+				{
+					"offset": 0,
+					"value": "Gdańsk"
+				},
+				{
+					"offset": 8,
+					"value": "Poland"
+				}
+			],
+			"types": ["locality", "political", "geocode"]
+		},
+		{
+			"description": "Kowale, Poland",
+			"matched_substrings": [
+				{
+					"length": 6,
+					"offset": 0
+				}
+			],
+			"place_id": "ChIJA9lNU6N2_UYRM-YfNjy7FFw",
+			"reference": "ChIJA9lNU6N2_UYRM-YfNjy7FFw",
+			"structured_formatting": {
+				"main_text": "Kowale",
+				"main_text_matched_substrings": [
+					{
+						"length": 6,
+						"offset": 0
+					}
+				],
+				"secondary_text": "Poland"
+			},
+			"terms": [
+				{
+					"offset": 0,
+					"value": "Kowale"
+				},
+				{
+					"offset": 8,
+					"value": "Poland"
+				}
+			],
+			"types": ["locality", "political", "geocode"]
+		},
+		{
+			"description": "Chełm, Poland",
+			"matched_substrings": [
+				{
+					"length": 5,
+					"offset": 0
+				}
+			],
+			"place_id": "ChIJ36UeUliaI0cRJLq9KiQRPAw",
+			"reference": "ChIJ36UeUliaI0cRJLq9KiQRPAw",
+			"structured_formatting": {
+				"main_text": "Chełm",
+				"main_text_matched_substrings": [
+					{
+						"length": 5,
+						"offset": 0
+					}
+				],
+				"secondary_text": "Poland"
+			},
+			"terms": [
+				{
+					"offset": 0,
+					"value": "Chełm"
+				},
+				{
+					"offset": 7,
+					"value": "Poland"
+				}
+			],
+			"types": [
+				"administrative_area_level_3",
+				"administrative_area_level_1",
+				"political",
+				"geocode"
+			]
+		},
+		{
+			"description": "Pruszcz Gdański, Poland",
+			"matched_substrings": [
+				{
+					"length": 6,
+					"offset": 8
+				}
+			],
+			"place_id": "ChIJHRukukVw_UYRAT4jOPhkPPI",
+			"reference": "ChIJHRukukVw_UYRAT4jOPhkPPI",
+			"structured_formatting": {
+				"main_text": "Pruszcz Gdański",
+				"main_text_matched_substrings": [
+					{
+						"length": 6,
+						"offset": 8
+					}
+				],
+				"secondary_text": "Poland"
+			},
+			"terms": [
+				{
+					"offset": 0,
+					"value": "Pruszcz Gdański"
+				},
+				{
+					"offset": 17,
+					"value": "Poland"
+				}
+			],
+			"types": ["locality", "political", "geocode"]
+		},
+		{
+			"description": "Starogard Gdański, Poland",
+			"matched_substrings": [
+				{
+					"length": 6,
+					"offset": 10
+				}
+			],
+			"place_id": "ChIJVzZ7ZJ6cAkcREIZNAQsVZbM",
+			"reference": "ChIJVzZ7ZJ6cAkcREIZNAQsVZbM",
+			"structured_formatting": {
+				"main_text": "Starogard Gdański",
+				"main_text_matched_substrings": [
+					{
+						"length": 6,
+						"offset": 10
+					}
+				],
+				"secondary_text": "Poland"
+			},
+			"terms": [
+				{
+					"offset": 0,
+					"value": "Starogard Gdański"
+				},
+				{
+					"offset": 19,
+					"value": "Poland"
+				}
+			],
+			"types": ["locality", "political", "geocode"]
+		}
+	],
+	"status": "OK"
+}

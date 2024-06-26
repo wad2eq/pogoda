@@ -1,0 +1,22 @@
+export const citiesOfNorway = [
+	'Oslo',
+	'Bergen',
+	'Stavanger',
+	'Trondheim',
+	'Trondheim',
+	'Fredrikstad',
+	'Kristiansand',
+	'Sandnes',
+	'Tromsø',
+	'Tønsberg',
+	'Ålesund',
+	'Moss',
+	'Bodø',
+	'Sandefjord',
+	'Arendal',
+	'Haugesund',
+	'Porsgrunn',
+	'Hamar',
+	'Halden',
+	'Lillehammer'
+];
