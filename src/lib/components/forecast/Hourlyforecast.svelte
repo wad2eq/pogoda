@@ -3,7 +3,7 @@
 	import * as Table from '$lib/components/ui/table';
 	import * as Drawer from '$lib/components/ui/drawer';
 	import { Button } from '$lib/components/ui/button';
-	import type { ShortInterval, LongInterval } from '$lib/types/cityforcast';
+	import type { ShortInterval, LongInterval } from '$lib/types/Cityforcast';
 	import { onMount } from 'svelte';
 
 	//TODO: do wywalenia ?
