@@ -39,7 +39,12 @@
 		<form action={`/locations/`} method="POST">
 			<div class="flex items-center gap-2">
 				<label for="location">{searchLocation}</label>
-				<Input bind:value={searchLocation} placeholder="Give the region" name="location" />
+				<Input
+					bind:value={searchLocation}
+					placeholder="Give the region"
+					name="location"
+					autocomplete="off"
+				/>
 				<Button type="submit">Search</Button>
 			</div>
 		</form>

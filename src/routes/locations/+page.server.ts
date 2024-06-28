@@ -11,13 +11,22 @@ const getPlaces = async (location: string) => {
 export const actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();
-		let localizationList: string = '';
-		if (data.get('location')) {
-			localizationList = await getPlaces(data.get('location'));
+		console.log(data);
+		// let localizationList: string = '';
+		const localizationList = await getPlaces(data.get('location'));
+		if (localizationList.status === 'INVALID_REQUEST') {
+			console.log('error ', localizationList);
+			return {
+				success: false,
+				error: data.get('location') ? 'The value not exists' : 'Please provide place to forecast'
+			};
 		}
+		// if (data.get('location')) {
+		// 	localizationList = await getPlaces(data.get('location'));
+		// }
 		return {
 			success: true,
-			localization: data.get('location'),
+			searchLocalization: data.get('location'),
 			localizationList
 		};
 	}
