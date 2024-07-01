@@ -2,12 +2,16 @@
 	import { page } from '$app/stores';
 
 	import Hourlyforecast from '$lib/components/forecast/Hourlyforecast.svelte';
+	import { get_forecast } from '$lib/utils/fetch_data';
 	import * as Table from '$lib/components/ui/table';
 	import { cityForcast } from '$lib/data/cityforcast';
 	import type { DayInterval, LongInterval } from '$lib/types/Cityforcast';
 
 	const dayIntervals: Array<DayInterval> = cityForcast.dayIntervals;
 	const longInterval: Array<LongInterval> = cityForcast.longIntervals;
+
+	const promise = get_forecast();
+	// console.log(await promise.json());
 
 	//TODO: ustawić zmienne globalne - może na tłumacznie
 	const currentLocation = '';
