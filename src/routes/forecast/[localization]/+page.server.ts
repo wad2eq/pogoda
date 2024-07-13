@@ -3,6 +3,8 @@ import type { Main } from '$lib/types/GoogleCords.js';
 export const load = async ({ fetch, params }) => {
 	//TODO: przenieść do ENV
 	const api_key = 'AIzaSyDQ52jw_XuyE7g9z6x5n1BFHFJ9pM4KEWs';
+	console.log('params');
+	console.log(params);
 
 	if (params.localization) {
 		const geocordinates = await fetch(
@@ -10,7 +12,8 @@ export const load = async ({ fetch, params }) => {
 		);
 
 		const response = (await geocordinates.json()) as Main;
-
+		console.log('Geolocalisaton of place');
+		console.log(response);
 		if (response.status === 'OK') {
 			// console.log(response.results[0].geometry.location);
 			return {

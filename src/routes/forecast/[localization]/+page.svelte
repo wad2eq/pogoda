@@ -6,15 +6,23 @@
 	import * as Table from '$lib/components/ui/table';
 	import { cityForcast } from '$lib/data/cityforcast';
 	import type { DayInterval, LongInterval } from '$lib/types/Cityforcast';
+	import type { Main } from '$lib/types/compact_forecast.js';
+	import { onMount } from 'svelte';
+	import TableCell from '$lib/components/ui/table/table-cell.svelte';
+	import WeatherSymbol from '$lib/components/forecast/WeatherSymbol.svelte';
+	// Dumy data
+	import compact_forecast from '$lib/data/yr_compact_forecast_dumy.json';
 
-	const dayIntervals: Array<DayInterval> = cityForcast.dayIntervals;
-	const longInterval: Array<LongInterval> = cityForcast.longIntervals;
+	console.log(compact_forecast.properties.timeseries.length);
 
-	const promise = get_forecast();
+	export let data;
+	// let forecast_data = get_forecast(); // TODO: nie chcę aby ta metoda odpalała się jeżeli status nie jest OK
+	const forecast_data: Main = compact_forecast;
+	console.log(forecast_data);
+	// TODO: Pewnie to trzeba skasować
+
+	// const forecast_date = get_forecast();
 	// console.log(await promise.json());
-
-	//TODO: ustawić zmienne globalne - może na tłumacznie
-	const currentLocation = '';
 
 	const getFormattedDate = (dateTime: Date) => {
 		console.log(dateTime);
@@ -43,23 +51,25 @@
 		</Table.Row>
 	</Table.Header>
 	<Table.Body>
-		{#each dayIntervals as dayInterval, i}
+		{#each forecast_data.properties.timeseries as forecast, i}
 			<Table.Row>
-				<Table.Cell><strong>{getFormattedDate(dayInterval.start)}</strong></Table.Cell>
-				{#each dayInterval.sixHourSymbols as symbol, i}
-					<Table.Cell>
-						{#if symbol}
-							<img src={`/weathericons/${symbol}.svg`} alt="" class="w-9" />
-						{/if}
-					</Table.Cell>
-				{/each}
-				<Table.Cell>{dayInterval.temperature.min}/{dayInterval.temperature.max}</Table.Cell>
-				<Table.Cell>{dayInterval.precipitation.value}/mm</Table.Cell>
-				<Table.Cell>{dayInterval.wind.max}</Table.Cell>
-				<Table.Cell
-					><Hourlyforecast forecastData={longInterval} time={dayInterval.start} /></Table.Cell
+				<TableCell>{forecast.time}</TableCell>
+				<TableCell
+					><WeatherSymbol image={forecast.data.next_1_hours?.summary.symbol_code} /></TableCell
+				>
+				<TableCell
+					><WeatherSymbol image={forecast.data.next_6_hours?.summary.symbol_code} /></TableCell
+				>
+				<TableCell
+					><WeatherSymbol image={forecast.data.next_12_hours?.summary.symbol_code} /></TableCell
+				>
+				<TableCell
+					><WeatherSymbol image={forecast.data.next_12_hours?.summary.symbol_code} /></TableCell
 				>
 			</Table.Row>
 		{/each}
 	</Table.Body>
 </Table.Root>
+{#await forecast_data}
+	<p>...data loading</p>
+{/await}
