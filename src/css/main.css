@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+	@apply mx-auto max-w-5xl px-4;
+}
+
+.button {
+	@apply rounded-md border-2 border-black px-4 py-2;
+}
+
+.blue {
+	@apply bg-blue-300 hover:bg-blue-200;
+}
+.red {
+	@apply bg-red-300 hover:bg-red-200;
+}
+.green {
+	@apply bg-green-300 hover:bg-green-200;
+}
+
+.link {
+	@apply border-b-2 border-black font-semibold hover:bg-blue-200;
+}
