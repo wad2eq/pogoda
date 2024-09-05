@@ -8,6 +8,7 @@ const getPlaces = async (location: string) => {
 };
 
 //Handle data sent to the request
+// Sveletkit urzywa actions do pracy z formularzami
 export const actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();

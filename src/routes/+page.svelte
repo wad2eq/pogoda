@@ -1,38 +1,38 @@
 <script>
 	import * as Table from '$lib/components/ui/table';
 	import { daysOfTheWeek } from '$lib/data/days';
-
+	import WeatherSymbol from '$lib/components/forecast/WeatherSymbol.svelte';
 	//Forcast dla przykładowych miast
 	const forcasts = [
 		{
 			id: 'INV001',
 			city: 'Oslo',
 			temp: [26, 19, 21, 22],
-			icon: '/weathericons/sleet.svg'
+			icon: 'sleet'
 		},
 		{
 			id: 'INV002',
 			city: 'Bergen',
 			temp: [23, 20, 21, 22],
-			icon: '/weathericons/clearsky_day.svg'
+			icon: 'clearsky_day'
 		},
 		{
 			id: 'INV003',
 			city: 'Stavanger',
 			temp: [24, 20, 21, 22],
-			icon: '/weathericons/cloudy.svg'
+			icon: 'cloudy'
 		},
 		{
 			id: 'INV004',
 			city: 'Trondheim',
 			temp: [16, 20, 21, 22],
-			icon: '/weathericons/clearsky_day.svg'
+			icon: 'clearsky_day'
 		},
 		{
 			id: 'INV005',
 			city: 'Trondheim',
 			temp: [22, 20, 21, 22],
-			icon: '/weathericons/clearsky_day.svg'
+			icon: 'clearsky_day'
 		}
 	];
 </script>
@@ -57,7 +57,7 @@
 				{#each forcast.temp as temp, j}
 					<Table.Cell
 						><div class="flex items-center">
-							<img src={forcast.icon} alt="" class="w-9" />{forcast.temp[0]}{j}
+							<WeatherSymbol image={forcast.icon} />
 						</div></Table.Cell
 					>
 				{/each}

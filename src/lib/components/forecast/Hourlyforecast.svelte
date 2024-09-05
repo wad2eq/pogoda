@@ -20,11 +20,11 @@
 	export let time: Date;
 
 	//Pobież dane aktualne dla lokalizacji
-	let curretDayForeCast: Array<LongInterval> = [];
+	let currentDayForeCast: Array<LongInterval> = [];
 	onMount(() => getTempTime());
 	const getTempTime = () => {
 		const currentDay = new Date(time).getDate();
-		curretDayForeCast = forecastData.filter((item: ShortInterval) => {
+		currentDayForeCast = forecastData.filter((item: ShortInterval) => {
 			return new Date(item.start).getDate() === currentDay;
 		});
 	};
@@ -44,7 +44,7 @@
 				</Table.Row>
 			</Table.Header>
 			<Table.Body>
-				{#each curretDayForeCast as foreCast, i}
+				{#each currentDayForeCast as foreCast, i}
 					<Table.Row>
 						<Table.Cell>{new Date(foreCast.start).getHours()}</Table.Cell>
 						<Table.Cell>
@@ -65,40 +65,3 @@
 		</Table.Root>
 	</Dialog.Content>
 </Dialog.Root>
-
-<!-- <Drawer.Root>
-	<Drawer.Trigger on:click={getTempTime}>Open</Drawer.Trigger>
-	<Drawer.Content>
-		<Drawer.Header>
-			<Drawer.Title>Are you sure absolutely sure?</Drawer.Title>
-			<Drawer.Description>This action cannot be undone.</Drawer.Description>
-		</Drawer.Header>
-		<Table.Root>
-			<Table.Header>
-				<Table.Row>
-					<Table.Head>Time</Table.Head>
-					<Table.Head>Weather</Table.Head>
-					<Table.Head>Temp</Table.Head>
-					<Table.Head>Precip. mm</Table.Head>
-					<Table.Head>Wind(gust) m/s</Table.Head>
-					<Table.Head>Wind desc.</Table.Head>
-				</Table.Row>
-			</Table.Header>
-			<Table.Body>
-				{#each curretDayForeCast as foreCast, i}
-					<Table.Row>
-						<Table.Cell>{new Date(foreCast.start).getHours()}</Table.Cell>
-						<Table.Cell>{foreCast.precipitation.value}/mm</Table.Cell>
-						<Table.Cell>{foreCast.temperature.value}</Table.Cell>
-						<Table.Cell>{foreCast.wind.max}</Table.Cell>
-						<Table.Cell>asdasd</Table.Cell>
-					</Table.Row>
-				{/each}
-			</Table.Body>
-		</Table.Root>
-		<Drawer.Footer>
-			<Button variant="outline">Button</Button>
-			<Drawer.Close>Cancel</Drawer.Close>
-		</Drawer.Footer>
-	</Drawer.Content>
-</Drawer.Root> -->
