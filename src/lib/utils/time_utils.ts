@@ -1,7 +1,7 @@
 import { Item } from '$lib/components/ui/menubar';
 import type { Data } from '$lib/types/compact_forecast';
 
-// TODO: add auto detekt for nationality
+// TODO: porównać to rozwiązanie z tym https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat
 export const getFormattedDate = (dateTime: Date) => {
 	const national = 'no-NO';
 	const date = new Date(dateTime);
@@ -16,20 +16,22 @@ interface newForecastObj {
 	data: Array<Data>;
 }
 
-// TODO: Change to Map Object
+//Fix temperature
 
+// TODO: Change to Map Object
 function getPartOfDay(time) {
 	const hour = time.getHours();
-	if (hour >= 0 && hour < 6) {
+	if (hour >= 2 && hour < 8) {
 		return 'Night';
-	} else if (hour >= 6 && hour < 12) {
+	} else if (hour >= 8 && hour < 14) {
 		return 'Morning';
-	} else if (hour >= 12 && hour < 18) {
+	} else if (hour >= 14 && hour < 20) {
 		return 'Afternoon';
 	} else {
 		return 'Evening';
 	}
 }
+
 // TODO: zmienić nazwę tej metody
 export const get_part_day = (item, obj) => {
 	const time = new Date(item.time);

@@ -16,7 +16,6 @@ export const actions = {
 		// let localizationList: string = '';
 		const localizationList = await getPlaces(data.get('location'));
 		if (localizationList.status === 'INVALID_REQUEST') {
-			console.log('error ', localizationList);
 			return {
 				success: false,
 				error: data.get('location') ? 'The value not exists' : 'Please provide place to forecast'
