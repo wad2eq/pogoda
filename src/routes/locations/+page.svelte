@@ -2,7 +2,6 @@
 	//TODO: handle no localization provided jeżeli user nie da lokalizacji
 	// to pobieramy ostatnią lokalizację podaną przez usera albo na podstawie geo ładujemy miast z okolicy
 
-	import type { Prediction } from '$lib/types/Google_places.js';
 	export let form;
 	console.log('Dane z formularza ', form);
 	//TODO: zastanowić się nad obsługa będów

@@ -24,5 +24,4 @@ export async function load({ params, fetch }) {
 	console.log(weather.properties.timeseries[0]);
 
 	return { weather: weather.properties.timeseries };
-	error(404, 'Not found');
 }
