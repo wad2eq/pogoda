@@ -6,6 +6,7 @@
 	import type { ShortInterval, LongInterval } from '$lib/types/Cityforcast';
 	import { onMount } from 'svelte';
 
+	let openDrawer = false;
 	//TODO: do wywalenia ?
 	const getFormattedDate = (dateTime: Date) => {
 		const national = 'no-NO';
